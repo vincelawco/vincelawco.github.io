@@ -66,8 +66,8 @@ a.no-border, .no-border a {border:none;}
 
 /*styles for interstitial sections*/
 .section_interstitial {
-	height: 15px;
-  background: linear-gradient(135deg, #08cbff 0%, #08a9ff 35%, #047aff 85%);
+	height: 500px;
+  background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url("../img/section_divider.png")  center / cover;;
 }
 
 /*styles for quote sections*/
