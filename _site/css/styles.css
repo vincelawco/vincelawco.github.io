@@ -68,7 +68,7 @@ a.no-border, .no-border a {border:none;}
 
 /*styles for interstitial sections*/
 .section_interstitial {
-	height: 500px;
+	height: 50vh;
   background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url("../img/section_divider.png")  center / cover;;
 }
 
@@ -221,9 +221,21 @@ a:hover.img-link {opacity: 0.3;}
 
 /*FOOTER*/
 .footer_links {
-	font-family: 'Slabo 27px', serif;
-	margin:0px 24px;
-	font-size: 1.3em;
+	font-family: 'Roboto', serif;
+	font-size: 1.1em;
+}
+
+.footer_items {
+  margin:0px 10px;
+  display: inline;
+}
+
+.footer_list {
+  list-style-type:none;
+  padding:0;
+}
+
+.footer_container {
 }
 
 footer {
