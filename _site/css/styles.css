@@ -192,10 +192,10 @@ form {
 
 /*box border and padding*/
 .light_content_box {
-  border-left: 8px solid transparent;
-  -moz-border-image: -moz-linear-gradient(top left, #08cbff 0%, #08a9ff 100%);
-  -webkit-border-image: -webkit-linear-gradient(top left, #08cbff 0%, #08a9ff 100%);
-  border-image: linear-gradient(to bottom right, #08cbff 0%, #08a9ff 100%);
+  border-left: 1px solid transparent;
+  -moz-border-image: -moz-linear-gradient(top left, #08cbff 0%, #08a9ff 20%);
+  -webkit-border-image: -webkit-linear-gradient(top left, #08cbff 0%, #08a9ff 20%);
+  border-image: linear-gradient(to bottom right, #08cbff 0%, #08a9ff 20%);
   border-image-slice: 1;
   padding:0px 18px;
   margin-bottom:20px;
