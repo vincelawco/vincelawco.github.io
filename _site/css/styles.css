@@ -218,7 +218,7 @@ form {
 .light_content_padding {padding:8px 12px;}
 
 .light_content_padding {text-align: left;}
-  @media screen and (max-width: 840px) {text-align:center;}
+  @media screen and (max-width: 840px) {.light_content_padding {text-align:center;}}
 
 /********IMAGES********/
 
