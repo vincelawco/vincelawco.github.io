@@ -12,6 +12,8 @@ p {line-height: 1.3em;}
 li {line-height: 2em;}
 i {vertical-align: sub;}
 ol {list-style-type:decimal-leading-zero;}
+::selection {background: #ffd12a;}
+::-moz-selection {background: #ffd12a;}
 
 /* unvisited link */ a, a:link {color:#555;text-decoration:none;border-bottom:1px dashed #0b5394;}
 /* visited link */ a:visited {text-decoration:none;border-bottom:1px dashed #0b5394;}
