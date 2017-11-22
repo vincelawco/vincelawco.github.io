@@ -68,7 +68,7 @@ a.no-border, .no-border a {border:none;}
 
 /*styles for interstitial sections*/
 .section_interstitial {
-	height: 500px;
+	height: 50vh;
   background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url("../img/section_divider.png")  center / cover;;
 }
 
