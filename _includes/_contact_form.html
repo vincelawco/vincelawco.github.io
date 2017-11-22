@@ -1,3 +1,11 @@
+<script type="text/javascript">
+  document.onready = function () {
+    document.querySelectorAll("input[data-required]").forEach(function (e) {
+       e.required = true;
+    });
+  };
+</script>
+
 <div class="mdl-grid content_max-width">
 	<div class="mdl-cell mdl-cell--12-col center">
 		<h2>Contact Me</h2>
@@ -12,17 +20,17 @@
 		<form  id="form2" name="form2" class="topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://formspree.io/hello@vincelaw.co">
   	  
   	  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-  	    <input class="mdl-textfield__input" id="form_customer_name" name="form_customer_name" type="text" class="field text medium" value="" maxlength="255" tabindex="1" onkeyup="" >
+  	    <input class="mdl-textfield__input" id="form_customer_name" name="form_customer_name" type="text" class="field text medium" value="" maxlength="255" tabindex="1" onkeyup="" data-required>
   	    <label class="mdl-textfield__label" for="form_customer_name">Name</label>
   	  </div>
 
   	  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-  	    <input class="mdl-textfield__input" id="form_customer_email" name="form_customer_email" type="email" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="2" >
+  	    <input class="mdl-textfield__input" id="form_customer_email" name="form_customer_email" type="email" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="2" data-required>
   	    <label class="mdl-textfield__label" for="form_customer_email">Email Address</label>
   	  </div>
 
   	  <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
-        <select class="mdl-selectfield__select" id="form_customer_need" name="form_customer_need" class="field select medium" tabindex="3">
+        <select class="mdl-selectfield__select" id="form_customer_need" name="form_customer_need" class="field select medium" tabindex="3" data-required>
           <option value="" selected="selected"></option>
           <option value="consulting">Consulting</option>
           <option value="coaching">Coaching</option>
@@ -33,7 +41,7 @@
       </div>
 
   	  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-	      <textarea class="mdl-textfield__input" class="field textarea medium" spellcheck="true" rows="3" cols="50" tabindex="4" onkeyup="" id="form_customer_note" name="form_customer_note"></textarea>
+	      <textarea class="mdl-textfield__input" class="field textarea medium" spellcheck="true" rows="3" cols="50" tabindex="4" onkeyup="" id="form_customer_note" name="form_customer_note" data-required></textarea>
 	      <label class="mdl-textfield__label" for="form_customer_note">Tell me a bit about you or your company...</label>
 	    </div>
 
@@ -41,10 +49,22 @@
         <input type="submit" value="Submit"/>
 			</div>
 
-			<input type="hidden" name="_next" value="success.html" />
+			<input type="hidden" name="_next" value="success" />
 
   	</form>
 
 	</div>
 	<div class="mdl-cell mdl-cell--3-col"></div>
 </div>
+
+<script type="text/javascript">
+  $('#form2 :input:visible[required="data-required"]').each(function()
+  {
+    if(!this.validity.valid)
+    {
+        $(this).focus();
+        // break
+        return false;
+    }
+  });
+</script>
