@@ -1,154 +1,396 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+	<head>
+	
+		<meta charset="UTF-8">
+		<title>Vince Law - Consulting, Coaching, Writing</title>
+		<meta name="description" content="Free Web tutorials">
+		<meta name="keywords" content="product, management, consulting, coach, mentor, vince, law, learn, education">
+		<meta name="author" content="Vince Law">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon; charset=binary">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" ></script>
+		
+		<!--MDL-->
+		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-light_blue.min.css" />
+		<script src="https://code.getmdl.io/1.3.0/material.min.js" ></script>
 
-  <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--fonts-->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
 
-  <title>Your awesome title</title>
-  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search resu...">
+		<!--mdl-selectfield-->
+		<link rel="stylesheet" href="mdl-selectfield/mdl-selectfield.min.css">
+		<script src="mdl-selectfield/mdl-selectfield.min.js"></script>
+		
+		<!--wufoo-->
+		<script src="js/wufoo.js"></script>
 
-  <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="http://localhost:4000/">
-  <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="/feed.xml">
-  
-  
-</head>
+		<!--css-->
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
 
+		<!--google analytics-->
 
-  <body>
+		<script type="text/javascript" >
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    <header class="site-header" role="banner">
+		  ga('create', 'UA-91333942-1', 'auto');
+		  ga('send', 'pageview');
 
-  <div class="wrapper">
-    
-    
-    <a class="site-title" href="/">Your awesome title</a>
-  
-    
-      <nav class="site-nav">
-        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-        <label for="nav-trigger">
-          <span class="menu-icon">
-            <svg viewBox="0 0 18 15" width="18px" height="15px">
-              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-            </svg>
-          </span>
-        </label>
+		</script>
 
-        <div class="trigger">
-          
-            
-            
-            <a class="page-link" href="/about/">About</a>
-            
-          
-            
-            
-          
-            
-            
-          
-            
-            
-          
-            
-            
-            <a class="page-link" href="/REF/mdl-selectfield-master/">mdl-selectfield</a>
-            
-          
-            
-            
-          
-        </div>
-      </nav>
-    
-  </div>
-</header>
+		<!--smooth scrolling-->
 
+		<script>
+		$(document).ready(function(){
+		  // Add smooth scrolling to all links
+		  $("a").on('click', function(event) {
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        <div class="home">
+		    // Make sure this.hash has a value before overriding default behavior
+		    if (this.hash !== "") {
+		      // Prevent default anchor click behavior
+		      event.preventDefault();
 
-  <h1 class="page-heading">Posts</h1>
-  
-  
+		      // Store hash
+		      var hash = this.hash;
+
+		      // Using jQuery's animate() method to add smooth page scroll
+		      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		      $('.mdl-layout__content').animate({
+		        scrollTop: $(hash).get( 0 ).offsetTop
+		      }, 800, function(){
+		   
+		        // Add hash (#) to URL when done scrolling (default click behavior)
+		        window.location.hash = hash;
+		      });
+		    } // End if
+		  });
+		});
+    </script>
 
 
-  <ul class="post-list">
-    
-      <li>
-        
-        <span class="post-meta">Nov 21, 2017</span>
+	</head>
 
-        <h2>
-          <a class="post-link" href="/jekyll/update/2017/11/21/welcome-to-jekyll.html">Welcome to Jekyll!</a>
-        </h2>
-      </li>
-    
-  </ul>
+	<body>
 
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
+	<!--navigation and layout-->
 
-</div>
+	<div class="mdl-layout__container">
 
-      </div>
-    </main>
+		<div class="header-layout-transparent mdl-layout mdl-js-layout">
+		  <header class="mdl-layout__header mdl-layout__header--transparent">
+		    <div class="mdl-layout__header-row">
+		      <div class="mdl-layout-spacer"></div>
+		      <nav class="mdl-navigation navigation">
+		        <a class="mdl-navigation__link" href="#consulting">Consulting<i class="material-icons md-18 md-light md-inactive">arrow_downward</i></a>
+		        <a class="mdl-navigation__link" href="#coaching">Coaching<i class="material-icons md-18 md-light md-inactive">arrow_downward</i></a>
+		        <a class="mdl-navigation__link" href="https://medium.com/@vincelawco" target="_blank">Blog<i class="material-icons md-18 md-light md-inactive">call_made</i></a>
+		        <a class="mdl-navigation__link" href="#about">About<i class="material-icons md-18 md-light md-inactive">arrow_downward</i></a>
+		        <a class="mdl-navigation__link" href="#contact">Contact<i class="material-icons md-18 md-light md-inactive">arrow_downward</i></a>
+		      </nav>
+		    </div>
 
-    <footer class="site-footer">
+		  </header>
 
-  <div class="wrapper">
+		  <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+		    <span class="mdl-layout-title">Vince Law</span>
+		    <nav class="mdl-navigation no-border">
+	        <a class="mdl-navigation__link" href="#consulting">Consulting<i class="material-icons md-18 md-light md-inactive">arrow_downward</i></a>
+	        <a class="mdl-navigation__link" href="#coaching">Coaching<i class="material-icons md-18 md-light md-inactive">arrow_downward</i></a>
+	        <a class="mdl-navigation__link" href="https://medium.com/@vincelawco" target="_blank">Blog<i class="material-icons md-18 md-light md-inactive">call_made</i></a>
+	        <a class="mdl-navigation__link" href="#about">About<i class="material-icons md-18 md-light md-inactive">arrow_downward</i></a>
+	        <a class="mdl-navigation__link" href="#contact">Contact<i class="material-icons md-18 md-light md-inactive">arrow_downward</i></a>
+		    </nav>
+		  </div>
 
-    <h2 class="footer-heading">Your awesome title</h2>
+		  <main class="mdl-layout__content">
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>
-            
-              Your awesome title
-            
-            </li>
-            
-            <li><a href="mailto:your-email@example.com">your-email@example.com</a></li>
-            
-        </ul>
-      </div>
+		  	<div class="page-content section_header">
+			  	<div class="mdl-grid content_max-width">
+			  	  <div class="mdl-cell mdl-cell--12-col vert_middle">
+	  	  		  <h1>Vince Law</h1>
+	  	  		  <h6>/ˈvins lô/</h6>
+	  	  		  <h5>proper noun.</h5>
+	  	  		  <ol>
+	  	  		  	<li><a href="#consulting">Product advisor & consultant</a><i class="material-icons md-18 md-light md-inactive">arrow_downward</i></li>
+	  	  		  	<li><a href="#coaching">Product manager coach & instructor</a><i class="material-icons md-18 md-light md-inactive">arrow_downward</i></li>
+	  	  		  	<li><a href="https://medium.com/@vincelawco" target="_blank">Writer & blogger</a><i class="material-icons md-18 md-light md-inactive">call_made</i></li>
+	  	  		  	<li><a href="#about">Former tech consultant & mechanical engineer</a><i class="material-icons md-18 md-light md-inactive">arrow_downward</i></li>
+	  	  		  	<li><a href="#contact">Bike & auto mechanic, endurance athlete, & podcast/audiobook junkie</a><i class="material-icons md-18 md-light md-inactive">arrow_downward</i></li>
+	  	  	  	</ol>
+			  	  </div>
+			  	  <div class="mdl-cell mdl-cell--12-col center vert_bottom">
+			  	  	<a href="#consulting" class="no-border"><i class="material-icons md-48">keyboard_arrow_down</i></a>
+			  	  </div>
+			  	</div>
+		  	</div>
 
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          
-          <li>
-            <a href="https://github.com/jekyll"><span class="icon icon--github"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
-</span><span class="username">jekyll</span></a>
+		  	<div id="consulting" class="page-content section_white">
+					<div class="mdl-grid content_max-width">
+			  	  <div class="mdl-cell mdl-cell--12-col center">
+	  	  		  <h2 class=" center">Consulting</h2>
+	  	  		  <h4>For organizations looking to ship exceptional products</h4>
+			  	  </div>
+			  	</div>
+			  	<div class="mdl-grid content_max-width">
+			  	  <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet ">
+	  	  		  <h3>Product<br>Strategy</h3>
+	  	  		  <p class="light_content_box">Bring clarity to the mission, vision, and strategy for your product, from customer-centric product definition to go-to-market planning.<br><br></p>
+			  	  </div>
+			  	  <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet ">
+	  	  		  <h3>Product<br>Planning</h3>
+	  	  		  <p class="light_content_box">Near- and long-term roadmapping, requirements definition, and prioritization so you can focus on building the right product with the least time.</p>
+			  	  </div>
+			  	  <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet ">
+	  	  		  <h3>Product<br>Operations</h3>
+	  	  		  <p class="light_content_box">Optimize your delivery and iteration by improving the processes and removing the roadblocks that keep you and your product team from shipping.</p>
+			  	  </div>
+		  	  </div>
 
-          </li>
-          
+		  	  <div class="mdl-grid content_max-width">
+		  	  	<div class="mdl-cell mdl-cell--12-col center">
+		  	  		<a href="#contact" class="no-border">
+		  	  			<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button_custom">
+		  	  		  	Contact Me
+		  	  			</button>
+	  	  			</a>
+		  	  	</div>
+		  	  </div>
 
-          
-          <li>
-            <a href="https://twitter.com/jekyllrb"><span class="icon icon--twitter"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
-</span><span class="username">jekyllrb</span></a>
+		  	</div>
 
-          </li>
-          
-        </ul>
-      </div>
+		  	
+		  	<div class="page-content section_interstitial"></div>
 
-      <div class="footer-col footer-col-3">
-        <p>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</p>
-      </div>
-    </div>
+		  	
+		  	<!---
+		  	<div class="page-content section_quote section_quote_1">
 
-  </div>
+					<div class="mdl-grid content_max-width quote_right">
+		  	  	<div class="mdl-cell mdl-cell--1-col mdl-cell--hide-tablet"></div>
+		  	  	<div class="mdl-cell mdl-cell--7-col mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+		  	  		<div class="quote_right_box">
+			  	  		<p class="quote_text center">Lorem ipsum quote text asdf asfd asdf asdf asdf asfd asdf asdf asdf asfd asdf asdf.<br></p>
+		  	  		</div>
+	  	  		</div>
+		  	  	<div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--1-col-phone quote_from">
+	  	  			<p class="quote_from_bottom">
+	  	  				<span class="quote_name">Jane Smith</span>
+	  	  				<br>
+	  	  				<span class="quote_title">CEO</span>
+	  	  				<span class="quote_company">, Jackbox</span>
+	  	  			</p>
+		  	  	</div>
+		  	  	<div class="mdl-cell mdl-cell--1-col mdl-cell--hide-tablet"></div>
+	  	  	</div>
 
-</footer>
+					<div class="mdl-grid content_max-width quote_left">
+		  	  	<div class="mdl-cell mdl-cell--1-col mdl-cell--hide-tablet"></div>
+		  	  	<div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--1-col-phone quote_from right">
+	  	  			<p class="quote_from_bottom quote_from_left">
+	  	  				<span class="quote_name">Jane Smith</span>
+	  	  				<br>
+	  	  				<span class="quote_title">CEO</span>
+	  	  				<span class="quote_company">, Jackbox</span>
+	  	  			</p>
+		  	  	</div>
+		  	  	<div class="mdl-cell mdl-cell--7-col mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+		  	  		<div class="quote_left_box">
+			  	  		<p class="quote_text center">Lorem ipsum quote text asdf asfd asdf asdf asdf asfd asdf asdf asdf asfd asdf asdf.</p>
+		  	  		</div>
+	  	  		</div>
+		  	  	<div class="mdl-cell mdl-cell--1-col mdl-cell--hide-tablet"></div>
+	  	  	</div>
+		  		  	  	
+		  	</div>---->
+
+		  	
+
+		  	<div id="coaching" class="page-content section_white">
+		  		<div class="mdl-grid content_max-width">
+		  			<div class="mdl-cell mdl-cell--12-col center">
+			  			<h2>Coaching</h2>
+	  	  		  <h4>For individual product managers looking to reach their full potential</h4>
+  	  		  </div>
+		  			
+		  			<div class="mdl-grid content_max-width">
+			  			<div class="mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet right">
+			  				<h3>Competency<br>Assessment</h3>
+		  				</div>
+	  	  		  <div class="mdl-cell mdl-cell--8-col middle">
+	  	  		  	<p class="light_content_box">You can’t improve what you don’t measure. Complete a competency assessment against a proprietary performance rubric to see where you can improve.</p>
+  	  		  	</div>
+  	  		  	<div class="mdl-cell mdl-cell--1-col mdl-cell--hide-tablet"></div>
+  	  		  </div>
+		  		
+		  			<div class="mdl-grid content_max-width">
+			  			<div class="mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet right">
+			  				<h3>Personalized<br>Growth Planning</h3>
+		  				</div>
+	  	  		  <div class="mdl-cell mdl-cell--8-col middle">
+	  	  		  	<p class="light_content_box">Custom-formulate growth plan with actionable near- and long-term goals based on the competency assessment.</p>
+  	  		  	</div>
+  	  		  	<div class="mdl-cell mdl-cell--1-col mdl-cell--hide-tablet"></div>
+  	  		  </div>
+		  		
+		  			<div class="mdl-grid content_max-width">
+			  			<div class="mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet right">
+			  				<h3>Regular Meeting<br>& Mentoring</h3>
+		  				</div>
+	  	  		  <div class="mdl-cell mdl-cell--8-col middle">
+	  	  		  	<p class="light_content_box">Weekly calls and monthly meetings to maintain accountability, measure progress, unblock barriers, and discuss any immediate PM challenges you are facing.</p>
+  	  		  	</div>
+  	  		  	<div class="mdl-cell mdl-cell--1-col mdl-cell--hide-tablet"></div>
+  	  		  </div>
+		  		
+		  			<div class="mdl-grid content_max-width">
+			  			<div class="mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet right">
+			  				<h3>Job Search<br>& Interview</h3>
+		  				</div>
+	  	  		  <div class="mdl-cell mdl-cell--8-col middle">
+	  	  		  	<p class="light_content_box">Increase your chances of scoring an interview or landing that dream job with resume reviews, interview prep, and role-specific job search guidance.</p>
+  	  		  	</div>
+  	  		  	<div class="mdl-cell mdl-cell--1-col mdl-cell--hide-tablet"></div>
+  	  		  </div>
+
+  	  		  <div class="mdl-grid content_max-width">
+			  	  	<div class="mdl-cell mdl-cell--12-col">
+			  	  		<a href="#contact" class="no-border">
+			  	  			<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button_custom">
+			  	  		  	Contact Me
+			  	  			</button>
+		  	  			</a>
+			  	  	</div>
+			  	  </div>
+
+		  		</div>
+		  	</div>
+
+		  	<div id="about" class="page-content section_dark_blue">
+					<div class="mdl-grid content_max-width">
+			  	  <div class="mdl-cell mdl-cell--12-col center">
+	  	  		  <h2>About Me</h2>
+			  	  </div>
+			  	</div>
+			  	<div class="mdl-grid content_max-width">
+		  			<div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet center">
+		  				<img class="img-circle" src="img/vince_bw.png">
+	  				</div>
+  	  		  <div class="mdl-cell mdl-cell--8-col">
+  	  		  	<h3>Vince Law</h3>
+  	  		  	<h4>Product Management professional with 10 years of experience</h4>
+  	  		  	<ul>
+  	  		  		<li>Director of Product Management @ <a target="_blank" href="https://generalassemb.ly/">General Assembly</a></li>
+  	  		  		<li>Instructor, Product Management Course @ <a target="_blank" href="https://generalassemb.ly/">General Assembly</a></li>
+  	  		  		<li>Sr Product Manager @ <a target="_blank" href="http://www.storm8.com/">Storm8</a></li>
+  	  		  		<li>Product Manager @ <a target="_blank" href="https://www.kabam.com/">Kabam</a></li>
+  	  		  		<li>Former Technology Consultant & Mechanical Engineer</li>
+  	  		  		<li>Cyclist, runner, swimmer, leather craftsman, podcast/audiobook junkie</li>
+  	  		  	</ul>
+  	  		  	<p>
+  	  		  		<a class="img-link no-border" target="_blank" href="mailto:hello@vincelaw.co?Subject=Contact%20me"><img class="img-icon" src="img/email.png" /></a>
+  	  		  		<a class="img-link no-border" target="_blank" href="https://www.linkedin.com/in/vincelaw" ><img class="img-icon" src="img/linkedin.png" /></a>
+  	  		  		<a class="img-link no-border" target="_blank" href="https://twitter.com/vincelawco" ><img class="img-icon" src="img/twitter.png" /></a>
+  	  		  		<a class="img-link no-border" target="_blank" href="https://medium.com/@vincelawco" ><img class="img-icon" src="img/medium.png" /></a>
+	  		  		</p>
+	  		  	</div>
+		  	</div>
+	  	</div>
+
+	  	<div id="contact" class="page-content section_white">
+	  		<div class="mdl-grid content_max-width">
+	  			<div class="mdl-cell mdl-cell--12-col center">
+	  				<h2>Contact Me</h2>
+	  		  	<h4>Get in touch to find out more</h4>
+  		  	</div>
+	  		</div>
+	  		<div class="mdl-grid content_max-width">
+	  			<div class="mdl-cell mdl-cell--3-col"></div>
+	  			<div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet center">
+	  		  	<form  id="form1" name="form1" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://vincelawco.wufoo.com/forms/zxqnfvl1rpm54d/#public">
+	  		  	  
+	  		  	  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+	  		  	    <input class="mdl-textfield__input" id="Field3" name="Field3" type="text" class="field text medium" value="" maxlength="255" tabindex="1" onkeyup="" >
+	  		  	    <label class="mdl-textfield__label" for="Field3">Name</label>
+	  		  	  </div>
+
+	  		  	  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+	  		  	    <input class="mdl-textfield__input" id="Field4" name="Field4" type="email" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="2" >
+	  		  	    <label class="mdl-textfield__label" for="Field4">Email Address</label>
+	  		  	  </div>
+
+	  		  	  <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
+	  	          <select class="mdl-selectfield__select" id="Field5" name="Field5" class="field select medium" tabindex="3">
+	  	            <option value="" selected="selected"></option>
+	  	            <option value="consulting">Consulting</option>
+	  	            <option value="coaching">Coaching</option>
+	  	            <option value="other">Other</option>
+	  	          </select>
+	  	          <div class="mdl-selectfield__icon"><i class="material-icons">arrow_drop_down</i></div>
+	  	          <label class="mdl-selectfield__label" for="Field5">Interested in...</label>
+	  	        </div>
+
+	  		  	  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+  		  	      <textarea class="mdl-textfield__input" class="field textarea medium" spellcheck="true" rows="3" cols="50" tabindex="4" onkeyup="" id="Field6" name="Field6"></textarea>
+  		  	      <label class="mdl-textfield__label" for="Field6">Tell me a bit about you or your company...</label>
+  		  	    </div>
+
+  		  	    <div>
+                <input id="saveForm" name="saveForm" class="btTxt submit" type="submit" value="Submit"/>
+							</div>
+
+							<input type="hidden" id="idstamp" name="idstamp" value="BPaOY8VlKEN5+/HsJA/bq6GHtQDfsV52dEEA9Vpwy5c=" />
+
+	  		  	</form>
+
+  		  	</div>
+  		  	<div class="mdl-cell mdl-cell--3-col"></div>
+	  		</div>
+	  	</div>
+
+	  	<div id="" class="page-content section_dark_blue">
+				<div class="mdl-grid content_max-width">
+		  	  <div class="mdl-cell mdl-cell--12-col center">
+	  	  		<div class="">
+		  	  		<br>
+		  	  		<a href="#consulting" class="footer_links">Consulting</a>
+		  	  		<a href="#coaching" class="footer_links">Coaching</a>
+		  	  		<a href="https://medium.com/@vincelawco" target="_blank" class="footer_links">Blog</a>
+		  	  		<a href="#about" class="footer_links">About</a>
+	  	  		</div>
+  	  		</div>
+  	  		<div class="mdl-cell mdl-cell--12-col center">
+  	  		  <p>© 2017 vincelaw.co. All rights reserved.</p>
+		  	  </div>
+		  	</div>
+	  	</div>
+
+	  	</main>
+
+	  	<footer>
+	  	</footer>
+
+		</div>
+	</div>
 
 
-  </body>
+
+	</body>
+
+	<!--google analytics-->
+
+	<script type="text/javascript">
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-91333942-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
 
 </html>
