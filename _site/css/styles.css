@@ -3,8 +3,8 @@
 /*font master*/
 h1 {font-family: 'Roboto Slab', serif;color:#08cbff;font-size:6em;margin:40px 0px 10px 0px;}
 h2 {font-family: 'Roboto Slab', serif;color:#08cbff;font-size:3em;margin:60px 0px 5px 0px;}
-h3 {font-family: 'Roboto', sans-serif;letter-spacing:1px;color:#08a9ff;font-size:1.6em;line-height: 1em;text-transform: uppercase;font-weight: 500;margin:0px 0px 10px 0px;}
-h4 {font-size:1.1em;margin:0px 0px 0px 0px;text-transform: uppercase;}
+h3 {font-family: 'Roboto Slab', serif;letter-spacing:1px;color:#08a9ff;font-size:1.6em;line-height: 1em;font-weight: 900;margin:0px 0px 10px 0px;}
+h4 {font-size:1.2em;margin:0px 0px 0px 0px;text-transform: uppercase;font-weight: 900;}
 h5 {font-size:1.1em;margin:10px 0px 0px 0px;font-style: italic;}
 h6 {font-size:1.4em;margin:10px 0px 10px 0px;}
 p, li {font-family: 'Roboto', serif;font-size:1.1em;}
@@ -203,16 +203,22 @@ form {
 
 /*box border and padding*/
 .light_content_box {
-  border-left: 1px solid transparent;
+  border-top: 1px solid transparent;
   -moz-border-image: -moz-linear-gradient(top left, #08cbff 0%, #08a9ff 20%);
   -webkit-border-image: -webkit-linear-gradient(top left, #08cbff 0%, #08a9ff 20%);
   border-image: linear-gradient(to bottom right, #08cbff 0%, #08a9ff 20%);
   border-image-slice: 1;
-  padding:0px 18px;
+  padding:10px 0px;
   margin-bottom:20px;
   min-height: 75px;
 }
+
 .light_content_box p {margin-bottom:0px}
+
+.light_content_padding {padding:0 8px;}
+
+.light_content_padding {text-align: left;}
+  @media screen and (max-width: 840px) {text-align:center;}
 
 /********IMAGES********/
 
