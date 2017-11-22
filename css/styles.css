@@ -52,7 +52,7 @@ a.no-border, .no-border a {border:none;}
 /********SECTIONS********/
 
 /*styles for header full height*/
-.section_header {height: 100vh}
+.section_header {height: 92vh}
 
 /*styles for header, dark, and intersitial section*/
 .section_header, .section_dark_blue, .section_header a, .section_dark_blue a {color:#fff;}
