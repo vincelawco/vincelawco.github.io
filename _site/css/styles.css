@@ -55,6 +55,7 @@ a.no-border, .no-border a {border:none;}
   width:31px;
   border-radius: 50%;
   background-color: #fff;
+  margin-left: -16px;
 }
 
 /********SECTIONS********/
