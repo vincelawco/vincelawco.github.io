@@ -239,6 +239,18 @@ form {
 .img-icon {width:35px;height:35px;padding:0px 5px;opacity: 0.9;}
 a:hover.img-link {opacity: 0.3;}
 
+/*image logo*/
+.img-logo {
+  max-height: 75px;
+  max-width: 200px;
+}
+
+/*footnote*/
+.footnote {
+  opacity: 0.5;
+  font-style: italic;
+}
+
 
 /*FOOTER*/
 .footer_links {
