@@ -2,18 +2,29 @@
 
 /*font master*/
 h1 {font-family: 'Roboto Slab', serif;color:#08cbff;font-size:6em;margin:40px 0px 10px 0px;}
-h2 {font-family: 'Roboto Slab', serif;color:#08cbff;font-size:3em;margin:60px 0px 5px 0px;}
-h3 {font-family: 'Roboto Slab', serif;letter-spacing:1px;color:#08a9ff;font-size:1.6em;line-height: 1em;font-weight: 900;margin:0px 0px 10px 0px;}
+h2 {font-family: 'Roboto Slab', serif;color:#08cbff;font-size:3em;margin:60px 0px 0px 0px;}
+h3 {font-family: 'Roboto Slab', serif;letter-spacing:1px;color:#08a9ff;font-size:1.6em;line-height: 1.5em;font-weight: 900;margin:0px 0px 10px 0px;}
 h4 {font-size:1.2em;margin:0px 0px 0px 0px;text-transform: uppercase;font-weight: 900;}
 h5 {font-size:1.1em;margin:10px 0px 0px 0px;font-style: italic;}
 h6 {font-size:1.4em;margin:10px 0px 10px 0px;}
-p, li {font-family: 'Roboto', serif;font-size:1.1em;}
+p, li {font-family: 'Roboto', serif;font-size:1.2em;}
 p {line-height: 1.3em;}
 li {line-height: 2em;}
 i {vertical-align: sub;}
 ol {list-style-type:decimal-leading-zero;}
 ::selection {background: #ffd12a;}
 ::-moz-selection {background: #ffd12a;}
+p b {color:#000;}
+p em {color:#999;}
+
+/*font master*/
+.blog_post h1 {font-size:4em;line-height: 1.15em;margin:50px 0px 30px 0px;}
+.blog_post h2 {margin:10px 0px 10px 0px;}
+.blog_post h3 {font-size:2em; color:#ccc; margin-bottom: 40px;}
+.blog_post h4 {font-size:1.5em; text-transform: none; color:#000; margin-bottom: 30px;}
+.blog_post p {font-size:1.5em;line-height: 1.5em;margin:0px 0px 40px 0px;}
+.blog_post p.quote {font-size:3em;color:#aaa; font-family: 'Roboto Slab', serif;margin:40px 40px 40px 40px;font-style: italic;}
+.blog_post img {width:100%;margin:0px 0px 40px 0px;}
 
 /* unvisited link */ a, a:link {color:#555;text-decoration:none;border-bottom:1px dashed #0b5394;}
 /* visited link */ a:visited {text-decoration:none;border-bottom:1px dashed #0b5394;}
@@ -48,6 +59,10 @@ a.no-border, .no-border a {border:none;}
 /*max width for main content*/
 .content_max-width {
 	max-width:960px;
+}
+
+.blog_post .content_max-width {
+  max-width:1100px;
 }
 
 .white-dot {
@@ -124,9 +139,18 @@ input[type="submit"]:hover {
     cursor:pointer;
 }
 
+.button_small, input[type=submit] {
+  font-size:1.2em;
+  padding: 15px 25px;
+}
+
 /********FORM********/
 form {
   padding: 40px;
+}
+
+.blog_post form {
+  padding: 0px;
 }
 
 /********PADDING AND POSITIONING********/
@@ -248,8 +272,11 @@ footer {
     height: 100%;
 }
 
-
-
+/*side_bar*/
+.side_bar {
+  margin-top: 80px;
+  padding-left: 80px;
+}
 
 /*hero-rotate*/
 

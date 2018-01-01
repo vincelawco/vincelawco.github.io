@@ -75,135 +75,94 @@
 
 	<body>
 
+
 	<!--navigation and layout-->
 
 	<div class="mdl-layout__container">
 
 		<div class="header-layout-transparent mdl-layout mdl-js-layout">
 		  
-			{% include _nav-desk.html %}
-			{% include _nav-mob.html %}
+			<!--navigation-desktop-->
+<header class="mdl-layout__header mdl-layout__header--transparent">
+  <div class="mdl-layout__header-row">
+    <div class="mdl-layout-spacer"><a href="../"><div class="white-dot"></div></a></div>
+    <nav class="mdl-navigation navigation">
+      <a class="mdl-navigation__link" href="../#consulting">Consulting<i class="material-icons md-18 md-light md-inactive">arrow_downward</i></a>
+      <a class="mdl-navigation__link" href="../#training">Training<i class="material-icons md-18 md-light md-inactive">arrow_downward</i></a>
+      <a class="mdl-navigation__link" href="../#coaching">Coaching<i class="material-icons md-18 md-light md-inactive">arrow_downward</i></a>
+      <a class="mdl-navigation__link" href="https://medium.com/@vincelawco/latest" target="_blank">Blog<i class="material-icons md-18 md-light md-inactive">call_made</i></a>
+      <a class="mdl-navigation__link" href="../#about">About<i class="material-icons md-18 md-light md-inactive">arrow_downward</i></a>
+      <a class="mdl-navigation__link" href="../#contact">Contact<i class="material-icons md-18 md-light md-inactive">arrow_downward</i></a>
+    </nav>
+  </div>
+</header>
+			<!--navigation-mobile-->
+  <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+    <span class="mdl-layout-title">Vince Law</span>
+    <nav class="mdl-navigation no-border">
+      <a class="mdl-navigation__link" href="../#consulting">Consulting<i class="material-icons md-18 md-light md-inactive">arrow_downward</i></a>
+      <a class="mdl-navigation__link" href="../#training">Training<i class="material-icons md-18 md-light md-inactive">arrow_downward</i></a>
+      <a class="mdl-navigation__link" href="../#coaching">Coaching<i class="material-icons md-18 md-light md-inactive">arrow_downward</i></a>
+      <a class="mdl-navigation__link" href="https://medium.com/@vincelawco/latest" target="_blank">Blog<i class="material-icons md-18 md-light md-inactive">call_made</i></a>
+      <a class="mdl-navigation__link" href="../#about">About<i class="material-icons md-18 md-light md-inactive">arrow_downward</i></a>
+      <a class="mdl-navigation__link" href="../#contact">Contact<i class="material-icons md-18 md-light md-inactive">arrow_downward</i></a>
+    </nav>
+  </div>
 
 		  <main class="mdl-layout__content">
 
-		  	<div class="page-content section_header home_hero">
-			  	<div class="mdl-grid content_max-width">
-			  	  <div class="mdl-cell mdl-cell--12-col vert_middle">
-	  	  		  {% include _hero-rotate.html %}
-			  	  </div>
-			  	</div>
-		  	</div>
+		  	<div id="" class="page-content section_white blog_post">
 
-		  	<div id="consulting" class="page-content section_white">
 					<div class="mdl-grid content_max-width">
-			  	  <div class="mdl-cell mdl-cell--12-col center">
-	  	  		  <h2 class=" center">Consulting</h2>
-	  	  		  <p>For organizations looking to ship exceptional products.</p>
-			  	  </div>
-			  	</div>
-			  	<div class="mdl-grid content_max-width">
-			  	  <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet light_content_padding">
-	  	  		  <h3>Product<br>Strategy</h3>
-	  	  		  <p class="light_content_box">Bring clarity to the mission, vision, and strategy for your product, from customer-centric discovery to prototype experiementation to go-to-market planning.<br><br></p>
-			  	  </div>
-			  	  <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet light_content_padding">
-	  	  		  <h3>Roadmap &<br>Prioritization</h3>
-	  	  		  <p class="light_content_box">Define your near- and long-term roadmapping, requirements, and prioritization so you can focus your resources on building the right product as fast as you can.</p>
-			  	  </div>
-			  	  <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet light_content_padding">
-	  	  		  <h3>Metrics &<br>Performance</h3>
-	  	  		  <p class="light_content_box">Measure your performance by developing the right metrics that align your strategy to your execution and desired outcome.</p>
-			  	  </div>
-		  	  </div>
+			  	  
+						<!--TITLE BLOCK-->
 
-		  	  <div class="mdl-grid content_max-width">
-		  	  	<div class="mdl-cell mdl-cell--12-col center">
-		  	  		<a href="#contact" class="no-border">
-		  	  			<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button_custom">
-		  	  		  	Contact Me
-		  	  			</button>
-	  	  			</a>
+			  	  <div class="mdl-cell mdl-cell--8-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+	  	  		  <h1 class=""><b>Blog post title:</b> testing a post title with a longer length of text, part 1.</h1>
+	  	  		  <h3>Supporting sub-header that exlaborates a bit on what the title is all about.</h3>
+	  	  		  <h4>by Vince Law</h4>
+			  	  </div>
+
+			  	  <!--SIDE BAR BLOCK-->
+			  	  <div class="mdl-cell mdl-cell--4-col mdl-cell--0-col-tablet mdl-cell--0-col-phone side_bar">
+			  	  	<h3>Subscribe</h3>
+	  	  			<form  id="form3" name="form3" class="topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://formspree.io/hello@vincelaw.co">
+
+	  	  	  	  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+	  	  	  	    <input class="mdl-textfield__input" id="form_customer_email" name="form_customer_email" type="email" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="2" data-required>
+	  	  	  	    <label class="mdl-textfield__label" for="form_customer_email">Email Address</label>
+	  	  	  	  </div>
+
+  	  	  	    <div>
+  	  	          <input class="button_small" type="submit" value="Submit"/>
+  	  	  			</div>
+
+  	  	  			<input type="hidden" name="_next" value="success" />
+
+  	  	    	</form>
 		  	  	</div>
-		  	  </div>
+			  	
+			  	  <!--Content BLOCK-->
+
+			  	  <div class="mdl-cell mdl-cell--9-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+	  	  		  <p class="">Bring clarity to the mission, vision, and strategy for your product, from customer-centric discovery to prototype experiementation to go-to-market planning. Bring clarity to the mission, vision, and strategy for your product, from customer-centric discovery to prototype experiementation to go-to-market planning.</p>
+	  	  		  <h2><b>Section:</b> Something Clever</h2>
+	  	  		  <p class="">Bring clarity to the mission, vision, and strategy for your product, from customer-centric discovery to prototype experiementation to go-to-market planning.</p>
+	  	  		  <p class="quote">Bring clarity to the mission, vision, and strategy for your product.</p>
+	  	  		  <p class="">Bring clarity to the mission, vision, and strategy for your product, from customer-centric discovery to prototype experiementation to go-to-market planning. <em>Bring clarity to the mission, vision, and strategy for your product</em>, from customer-centric discovery to prototype experiementation to go-to-market planning. Bring clarity to the mission, vision, and strategy for your product, from customer-centric discovery to <b>prototype experiementation</b> to go-to-market planning. Bring clarity to the mission, vision, and strategy for your product, from customer-centric discovery to prototype experiementation to go-to-market planning. <em>Bring clarity to the mission, vision, and strategy for your product, from customer-centric discovery to prototype experiementation to go-to-market planning.</em> Bring clarity to the mission, vision, and strategy for your product, from customer-centric discovery to prototype experiementation to go-to-market planning.</p>
+	  	  		  <img src="img/desk_sample.jpg"/>
+	  	  		  <p class="">Bring clarity to the mission, vision, and strategy for your product, from customer-centric discovery to prototype experiementation to go-to-market planning.</p>
+	  	  		  <p class="">Bring clarity to the mission, vision, and strategy for your product, from customer-centric discovery to prototype experiementation to go-to-market planning.</p>
+	  	  		  <h2>In Conclusion</h2>
+	  	  		  <p class="">Bring clarity to the mission, vision, and strategy for your product, from customer-centric discovery to prototype experiementation to go-to-market planning.</p>
+			  	  </div>
+
+			  	</div>
 
 		  	</div>
 
 		  	
 		  	<div class="page-content section_interstitial_1"></div>
-		  	
-
-		  	<div id="training" class="page-content section_white">
-		  		<div class="mdl-grid content_max-width">
-		  			<div class="mdl-cell mdl-cell--12-col center">
-			  			<h2>Training & Workshops</h2>
-	  	  		  <p>For teams looking to grow and optimize their capabilities.</p>
-  	  		  </div>
-	  		  </div>
-
-	  		  <div class="mdl-grid content_max-width">
-			  	  <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet light_content_padding">
-	  	  		  <h3>Innovation<br>Capacity</h3>
-	  	  		  <p class="light_content_box">Increase your team's capacity for innovation and creative problem solving by reframing your problem finding and solution development approach.</p>
-			  	  </div>
-			  	  <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet light_content_padding">
-	  	  		  <h3>Product Development<br>& Operations</h3>
-	  	  		  <p class="light_content_box">Optimize your delivery by examining your processes, understand your challenges, and removing the roadblocks that keep you from shipping.</p>
-			  	  </div>
-			  	  <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet light_content_padding">
-	  	  		  <h3>Cross-functional<br>Team Culture</h3>
-	  	  		  <p class="light_content_box">Enable your team to focus on what's important to your organization by achieving shared language, shared vision, shared values, and shared ownership.</p>
-			  	  </div>
-		  	  </div>
-
-		  	  <div class="mdl-grid content_max-width">
-		  	  	<div class="mdl-cell mdl-cell--12-col center">
-		  	  		<a href="#contact" class="no-border">
-		  	  			<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button_custom">
-		  	  		  	Contact Me
-		  	  			</button>
-	  	  			</a>
-		  	  	</div>
-		  	  </div>
-
-		  	</div>
-		  	
-		  	<div class="page-content section_interstitial_2"></div>
-		  	
-
-		  	<div id="coaching" class="page-content section_white">
-		  		<div class="mdl-grid content_max-width">
-		  			<div class="mdl-cell mdl-cell--12-col center">
-			  			<h2>Coaching</h2>
-	  	  		  <p>For individual product managers looking to reach their full potential.</p>
-  	  		  </div>
-	  		  </div>
-
-	  		  <div class="mdl-grid content_max-width">
-			  	  <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet light_content_padding">
-	  	  		  <h3>Executive<br>Coaching</h3>
-	  	  		  <p class="light_content_box">Transform your mindset from execution-oriented to strategically-focused. Gain leadership perspective and receive advice based on best-practices and real-life experience.</p>
-			  	  </div>
-			  	  <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet light_content_padding">
-	  	  		  <h3>Personalized<br>Growth Planning</h3>
-	  	  		  <p class="light_content_box">Build your customize growth plan with actionable near- and long-term goals based on a comprehensive competency assessment.</p>
-			  	  </div>
-			  	  <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet light_content_padding">
-	  	  		  <h3>Job Search<br>& Interview</h3>
-	  	  		  <p class="light_content_box">Increase your chances of scoring an interview or landing that dream product job with resume reviews, interview prep, and role-specific job search guidance.</p>
-			  	  </div>
-		  	  </div>
-
-	  		  <div class="mdl-grid content_max-width">
-		  	  	<div class="mdl-cell mdl-cell--12-col center">
-		  	  		<a href="#contact" class="no-border">
-		  	  			<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button_custom">
-		  	  		  	Contact Me
-		  	  			</button>
-	  	  			</a>
-		  	  	</div>
-		  	  </div>
-
-		  	</div>
 
 		  	<div id="about" class="page-content section_dark_blue">
 			  	<div class="mdl-grid content_max-width">
@@ -211,9 +170,7 @@
 		  				<img class="img-circle" src="img/vince_color.png">
 	  				</div>
   	  		  <div class="mdl-cell mdl-cell--8-col">
-  	  		  	<h2>Vince Law</h2>
-  	  		  	<h6>/ˈvins lô/</h6>
-	  	  		  <h5>proper noun.</h5>
+  	  		  	<h2>About the Author</h2>
 	  	  		  <ol>
 	  	  		  	<li><a href="https://www.linkedin.com/in/vincelaw" target="_blank">Product Management professional with 10 years of experience</a><i class="material-icons md-18 md-light md-inactive">call_made</i></li>
 	  	  		  	<li><a href="#consulting">Product advisor & consultant</a><i class="material-icons md-18 md-light md-inactive">arrow_upward</i></li>
@@ -233,42 +190,28 @@
 	  		  	</div>
 			  	</div>
 
-			  	
-			  	<div class="mdl-grid content_max-width">
-		  			<div class="mdl-cell mdl-cell--12-col">
-			  			<h3>I've helped Product People from...</h3>
-		  			</div>
-			  	</div>
-			  	<div class="mdl-grid content_max-width">
-			  	  <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone center"><img class="img-logo" src="img/logos/amazon.png"></div>
-			  	  <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone center"><img class="img-logo" src="img/logos/google.png"></div>
-			  	  <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone center"><img class="img-logo" src="img/logos/adobe.png"></div>
-			  	  <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone center"><img class="img-logo" src="img/logos/linkedin.png"></div>
-
-			  	  <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone center"><img class="img-logo" src="img/logos/apple.png"></div>
-			  	  <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone center"><img class="img-logo" src="img/logos/ge.png"></div>
-			  	  <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone center"><img class="img-logo" src="img/logos/salesforce.png"></div>
-			  	  <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone center"><img class="img-logo" src="img/logos/twitter.png"></div>
-
-			  	  <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone center"><img class="img-logo" src="img/logos/berkeley_haas.png"></div>
-			  	  <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone center"><img class="img-logo" src="img/logos/berkeley_execed.png"></div>
-			  	  <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone center"><img class="img-logo" src="img/logos/premera.png"></div>
-			  	  <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone center"><img class="img-logo" src="img/logos/ucsf.png"></div>
-		  	  </div>
-		  	  <div class="mdl-grid content_max-width">
-  	  			<div class="mdl-cell mdl-cell--12-col right">
-  		  			<p class="footnote">* Logo for informational purposes only.</p>
-  	  			</div>
-		  	  </div>
-
-
 		  	</div>
 
-	  	<div id="contact" class="page-content section_white">
-	  		{% include _contact_form.html %}
 	  	</div>
 
-	  	{% include _footer.html %}
+	  	<!--<div id="" class="page-content section_dark_blue">
+	<div class="mdl-grid content_max-width">
+	  <div class="mdl-cell mdl-cell--12-col center">
+  		<div class="footer_container">
+	  		<ul class="footer_list">
+		  		<li class="footer_items"><a href="../#consulting" class="footer_links">Consulting</a></li>
+		  		<li class="footer_items"><a href="../#training" class="footer_links">Training</a></li>
+		  		<li class="footer_items"><a href="../#coaching" class="footer_links">Coaching</a></li>
+		  		<li class="footer_items"><a href="https://medium.com/@vincelawco/latest" target="_blank" class="footer_links">Blog</a></li>
+		  		<li class="footer_items"><a href="../#about" class="footer_links">About</a></li>
+	  		</ul>
+  		</div>
+		</div>
+		<div class="mdl-cell mdl-cell--12-col center">
+		  <p>© 2017 Vince Law LLC. All rights reserved.</p>
+	  </div>
+	</div>
+</div>-->
 
 	  	</main>
 
